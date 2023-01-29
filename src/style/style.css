@@ -1,0 +1,35 @@
+.bg-dark * {
+  color: #fff;
+}
+
+.py-120 {
+  padding: 120px 0;
+}
+
+.section-sub-title {
+  color: #f3525a;
+  letter-spacing: 2px;
+  line-height: 1.43;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.bg-light .section-title {
+  color: #273272;
+}
+
+.bg-dark .section-title {
+  color: white;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
