@@ -59,11 +59,11 @@ export const DEFAULT_PRODUCTS: Product[] = [
   },
   {
     id: "6",
-    name: "Gaming pc",
-    category: "tech",
+    name: "Xbox",
+    category: "console",
     variations: ["small", "medium", "large"],
     img: "https://hyperpc.ru/images/product/lumen/landing-content/plus/gallery/hyperpc_lumen_plus_live_photo_01.jpg",
-    price: 129.99,
+    price: 120.99,
     inStock: 1,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto inventore dignissimos tempora minima voluptatum illo nostrum sit harum quam exercitationem eveniet, ad culpa fuga provident minus repellendus quisquam quasi! Distinctio voluptas maxime, quas est veniam harum similique at, eum laboriosam autem deleniti, excepturi minima eos recusandae amet ipsam in sunt! Aliquid, rerum sapiente! Velit nesciunt amet libero repellendus debitis!",
