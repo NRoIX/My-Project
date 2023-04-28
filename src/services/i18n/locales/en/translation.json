@@ -1,0 +1,19 @@
+{
+  "common.login": "Login",
+  "common.logout": "Logout",
+
+  "navbar":{
+    "home":"Home",
+    "products": "Products",
+    "aboutus": "About Us"
+  },
+   "social": "Get connected with us on social networks",
+  "footer":{
+    "dis": "Always at your service",
+    "home":"Home",
+    "products": "Products",
+    "aboutus": "About Us",
+    "help": "Help"
+  }
+
+}

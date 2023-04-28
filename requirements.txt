@@ -1,0 +1,17 @@
+Final Project Requirements
+Ecommerce Project created with React JS (TSX)
+1.React JS + Hooks + Class Component + TypeScript + Redux + React-Redux + WebPack
+2.Ecommerce 
+# 3.Responsive
+4.Add to cart/wishlist
+# 5.Dark and Light mode
+# 6.Multi language min 2 lang  (AZ and EN)
+# 7.Blog Page or Campaigns Page
+# 8.Blog or Campaigns -> Add, Edit, Remove (Crud Systems) with Redux
+# 9.Dashboard(Admin Panel)
+# 10.Basic authentication (Login System)
+# 11.Search System
+# 12.use API
+# 13.use Animation (or AOS,Animate CSS) + Slider
+# 14.Product Filter 
+# 15.with LocalStorage

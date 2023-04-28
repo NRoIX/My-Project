@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body[class*="dark-mode"] {
+  background: #333;
+}
+
+body[class*="dark-mode"] p,
+body[class*="dark-mode"] span,
+body[class*="dark-mode"] button,
+body[class*="dark-mode"] a,
+body[class*="dark-mode"] h3,
+body[class*="dark-mode"] td,
+body[class*="dark-mode"] th,
+body[class*="dark-mode"] h1,
+body[class*="dark-mode"] h5,
+body[class*="dark-mode"] h2,
+body[class*="dark-mode"] hr
+body[class*="dark-mode"] .cart {
+  color: #eee;
+}
+body[class*="dark-mode"] .logineye {
+  color: #020617;
+}
+
+label {
+  display: block;
+}

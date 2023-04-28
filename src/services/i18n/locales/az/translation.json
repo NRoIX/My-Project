@@ -1,0 +1,19 @@
+{
+  "common.login": "Daxil ol",
+  "common.logout": "Çixish",
+ 
+  "navbar":{
+    "home":"Baş səhifə",
+    "products": "Məhsullar",
+    "aboutus": "Haqqımızda"
+  },
+  "social": "Sosial mediada bizə qoşulun",
+  "footer":{
+    "dis": "Həmişə xidmətinizdədir",
+    "home":"Baş səhifə",
+    "products": "Məhsullar",
+    "aboutus": "Haqqımızda",
+    "help" : "Kömək"
+  }
+
+}

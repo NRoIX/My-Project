@@ -1,0 +1,15 @@
+.nav {
+  border-bottom: 1px solid #111;
+  background: #fff;
+}
+
+body[class*="dark-mode"] .nav {
+  background: #111;
+}
+body[class*="dark-mode"] .languagebtn {
+  color: red;
+}
+
+body[class*="dark-mode"] .username{
+  color: red;
+}
