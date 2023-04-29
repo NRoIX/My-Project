@@ -2,8 +2,10 @@ import { FC } from "react";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import * as Aos from "aos";
+import { UseTranslationOptions, useTranslation } from "react-i18next";
 
 export const Home: FC = () => {
+  const {t} = useTranslation();
   useEffect(() => {
     Aos.init();
   }, []);
@@ -25,8 +27,8 @@ export const Home: FC = () => {
           <div className="flex justify-center items-center h-full">
             <div className="text-center text-white px-6 md:px-12">
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
-                WELCOME TO <br />
-                <span>HYPERPC</span>{" "}
+                {t("home.header")} <br />
+                <span>{t("home.header2")}</span>{" "}
               </h1>
             </div>
           </div>
@@ -34,7 +36,8 @@ export const Home: FC = () => {
       </div>
       <div>
         <div className="container my-24 px-6 mx-auto">
-          <h2 className="text-2xl font-bold mb-5 text-center">OUR SERVICES</h2>
+          <h2 className="mb-2 mt-0 text-3xl font-bold leading-tight">{t("home.service")}</h2>
+          <hr />
           <div className="flex flex-wrap mb-12" data-aos="flip-down">
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
               <div
@@ -57,7 +60,7 @@ export const Home: FC = () => {
               </div>
             </div>
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 " >
-              <h3 className="text-2xl font-bold mb-4">PC Clening </h3>
+              <h3 className="text-2xl font-bold mb-4">{t("home.servicetype")} </h3>
               <div className="text-red-600 text-sm mb-4 flex items-center font-medium"></div>
               <p className="text-gray-500 mb-6">
                 Ut pretium ultricies dignissim. Sed sit amet mi eget urna
@@ -96,7 +99,7 @@ export const Home: FC = () => {
             </div>
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6">
               <h3 className="text-2xl font-bold mb-4">
-                Troubleshooting issues
+              {t("home.servicetype2")}
               </h3>
               <div className="text-blue-600 text-sm mb-4 flex items-center font-medium"></div>
               <p className="text-gray-500">
@@ -137,7 +140,7 @@ export const Home: FC = () => {
             </div>
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
               <h3 className="text-2xl font-bold mb-4">
-                Installation and sale of new spare parts
+              {t("home.servicetype3")}
               </h3>
               <div className="text-yellow-600 text-sm mb-4 flex items-center font-medium"></div>
 
@@ -164,7 +167,8 @@ export const Home: FC = () => {
       </div>
       <div className="container my-24 px-6 mx-auto" data-aos="zoom-in-up">
         <section className="mb-32 text-gray-800">
-          <h2 className="text-3xl font-bold mb-12 text-center">Why us?</h2>
+          <h3 className="mb-2 mt-0 text-3xl font-bold leading-tight">{t("home.card")}</h3>
+          <hr />
           <div className="flex flex-wrap items-center">
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 md:px-6">
               <div
@@ -211,7 +215,7 @@ export const Home: FC = () => {
                   </div>
                 </div>
                 <div className="grow ml-4">
-                  <p className="font-bold mb-1">Support 24/7</p>
+                  <p className="font-bold mb-1">{t("home.cardicon")}</p>
                   <p className="text-gray-500">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Nihil quisquam quibusdam modi sapiente magni molestias
@@ -238,7 +242,7 @@ export const Home: FC = () => {
                   </div>
                 </div>
                 <div className="grow ml-4">
-                  <p className="font-bold mb-1">Quality assurance</p>
+                  <p className="font-bold mb-1">{t("home.cardicon2")}</p>
                   <p className="text-gray-500">
                     Eum nostrum fugit numquam, voluptates veniam neque quibusdam
                     ullam aspernatur odio soluta, quisquam dolore animi mollitia
@@ -265,7 +269,7 @@ export const Home: FC = () => {
                   </div>
                 </div>
                 <div className="grow ml-4">
-                  <p className="font-bold mb-1">Extremely fast Delivery</p>
+                  <p className="font-bold mb-1">{t("home.cardicon3")}</p>
                   <p className="text-gray-500">
                     Enim cupiditate, minus nulla dolor cumque iure eveniet
                     facere ullam beatae hic voluptatibus dolores exercitationem?
@@ -281,7 +285,7 @@ export const Home: FC = () => {
 
       <div className="container my-24 px-6 mx-auto" data-aos="zoom-in">
         <section className="mb-32 text-gray-800 text-center">
-          <h2 className="text-3xl font-bold mb-12">Our customers reviews </h2>
+          <h2 className="text-3xl font-bold mb-12">{t("home.reviews")} </h2>
           <div className="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
             <div className="mb-12 md:mb-0">
               <div className="flex justify-center mb-6">
@@ -679,7 +683,7 @@ export const Home: FC = () => {
                         </div>
                       </div>
                       <div className="grow ml-6">
-                        <p className="font-bold mb-1">Technical support</p>
+                        <p className="font-bold mb-1">{t("home.mapicon")}</p>
                         <p className="text-gray-500">support@example.com</p>
                         <p className="text-gray-500">+1 234-567-89</p>
                       </div>
@@ -710,7 +714,7 @@ export const Home: FC = () => {
                         </div>
                       </div>
                       <div className="grow ml-6">
-                        <p className="font-bold mb-1">Sales questions</p>
+                        <p className="font-bold mb-1">{t("home.mapicon2")}</p>
                         <p className="text-gray-500">sales@example.com</p>
                         <p className="text-gray-500">+1 234-567-89</p>
                       </div>

@@ -29,6 +29,11 @@ export const Nav: FC = () => {
     [isAuthenticated, location]
   );
 
+  const shouldShowWishlist = useMemo(
+    () => isAuthenticated && location.pathname != routes.wishlist,
+    [isAuthenticated,location]
+  );
+
   const handleGoToCart = useCallback(() => {
     history.push(routes.cart);
   }, [history]);
@@ -39,6 +44,10 @@ export const Nav: FC = () => {
 
   const handleGoToDashboard = useCallback(() => {
     history.push(routes.dashboard);
+  }, [history]);
+
+  const handleGoToWishlist = useCallback(() => {
+    history.push(routes.wishlist);
   }, [history]);
 
   const handleLanguageChange = useCallback((lng: string) => {
@@ -129,6 +138,18 @@ export const Nav: FC = () => {
                 </button>
               )}
             </li>
+            <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+              {shouldShowWishlist && (
+                <button
+                  type="button"
+                  className="disabled:text-black/30 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  onClick={handleGoToWishlist}
+                  data-te-nav-link-ref
+                >
+                 {t("navbar.wishlist")}
+                </button>
+              )}
+            </li>
 
             <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <Link
@@ -158,7 +179,8 @@ export const Nav: FC = () => {
                 onClick={handleGoToCart}
                 className="ax-w-xs transition duration-300 ease-in-out hover:scale-110 cart flex items-center gap-1"
               >
-                <BsFillCartFill size="26" />({totalItems})
+                <BsFillCartFill size="26" />
+                <span className="totalitemnumber">{totalItems}</span>
               </button>
             )}
             <div

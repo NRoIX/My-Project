@@ -3,6 +3,7 @@ export const routes = {
   Products : "/products",
   auth: "/auth",
   cart : "/cart",
+  wishlist : "/wishlist",
   dashboard: "/dashboard",
   aboutus : "/aboutus",
   createProduct: "/dashboard/products/create",

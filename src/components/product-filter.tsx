@@ -83,7 +83,7 @@ export const ProductFilter: FC<ProductFilterProps> = ({ onChange }) => {
       </div>
 
       <div>
-        <label htmlFor="category" className="mb-1">
+        <label htmlFor="category" className="mb-1 text-primary">
           Category
         </label>
         <select
@@ -100,7 +100,7 @@ export const ProductFilter: FC<ProductFilterProps> = ({ onChange }) => {
         </select>
       </div>
       <div className="inline-block">
-        <label htmlFor="price" className="mb-1">
+        <label htmlFor="price" className="mb-1 text-primary ">
           Price
         </label>
         <div className="flex justify-between font-sm mb-1">

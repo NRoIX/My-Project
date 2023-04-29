@@ -10,6 +10,7 @@ import { AuthContext, WishlistContextProvider } from "./provider";
 import { CartProvider } from "react-use-cart";
 import "aos/dist/aos.css";
 import * as Aos from "aos";
+import { Whislistpage } from "./pages/Wishlistpage";
 
 export const Routes: FC = () => {
   const { isAuthenticated, user } = useContext(AuthContext);
@@ -44,6 +45,7 @@ export const Routes: FC = () => {
         </Route>
 
         <Route path="/cart" exact component={Cart} />
+        <Route path="/wishlist" exact component={Whislistpage}></Route>
 
         {!isAuthenticated && <Redirect to={routes.auth} />}
       </Switch>

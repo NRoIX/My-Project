@@ -1,7 +1,9 @@
 import { FC } from "react";
 import "./aboutus.css";
+import { useTranslation } from "react-i18next";
 
 export const Aboutus: FC = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <div className=" overflow-hidden px-6 pt-24 mx-auto background-radial-gradient">
@@ -14,9 +16,9 @@ export const Aboutus: FC = () => {
                     className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12"
                     style={{ color: "hsl(218, 81%, 95%)" }}
                   >
-                    Why <br />
+                    {t("aboutus.header")} <br />
                     <span style={{ color: "hsl(218, 81%, 75%)" }}>
-                      HyperPC?
+                    {t("aboutus.header2")}
                     </span>
                   </h1>
                   <p
@@ -46,7 +48,7 @@ export const Aboutus: FC = () => {
           </div>
         </section>
       </div>
-      <div className="container my-24 px-6 mx-auto">
+      <div className="container my-24 px-6 mx-auto" data-aos="zoom-in">
         <section className="mb-32 text-gray-800">
           <div className="container mx-auto xl:px-32 text-center lg:text-left">
             <div className="grid lg:grid-cols-2 flex items-center">
@@ -58,7 +60,7 @@ export const Aboutus: FC = () => {
                     backdropFilter: "blur(30px)",
                   }}
                 >
-                  <h2 className="text-3xl font-bold mb-6">We provide</h2>
+                  <h2 className="text-3xl font-bold mb-6">{t("aboutus.card")}</h2>
                   <p className="text-gray-500 mb-6 pb-2 lg:pb-0">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                     soluta corporis voluptate ab error quam dolores doloremque,
@@ -76,7 +78,7 @@ export const Aboutus: FC = () => {
                           d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
                         ></path>
                       </svg>
-                      Best team
+                      {t("aboutus.cardicon")}
                     </p>
                     <p className="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0">
                       <svg
@@ -89,7 +91,7 @@ export const Aboutus: FC = () => {
                           d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
                         ></path>
                       </svg>
-                      Best quality
+                      {t("aboutus.cardicon2")}
                     </p>
                     <p className="flex items-center mb-2 lg:mb-0 mx-auto md:mx-0">
                       <svg
@@ -102,7 +104,7 @@ export const Aboutus: FC = () => {
                           d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
                         ></path>
                       </svg>
-                      Fast service
+                      {t("aboutus.cardicon3")}
                     </p>
                   </div>
                   <p className="text-gray-500 mb-0">
@@ -153,10 +155,10 @@ export const Aboutus: FC = () => {
               <div className="flex justify-center items-center h-full">
                 <div className="text-center text-white px-6 py-6 md:py-0 md:px-12 max-w-[800px]">
                   <h2 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-tight mb-12">
-                    Our Team <br />
-                    <span>will be </span>
+                  {t("aboutus.group")} <br />
+                    <span>{t("aboutus.group2")} </span>
                     <br />
-                    <span> happy to help you</span>
+                    <span> {t("aboutus.group3")}</span>
                   </h2>
                   <p className="text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -175,10 +177,10 @@ export const Aboutus: FC = () => {
           <div className="grid lg:grid-cols-2 gap-4 lg:gap-x-12 lg:mb-0">
             <div className="mb-12 lg:mb-0">
               <h2 className="text-3xl font-bold mb-6">
-                Frequently asked questions
+              {t("aboutus.fqa")}
               </h2>
               <p className="text-gray-500 mb-12">
-                Didn't find your answer in the FAQ? Contact our sales team.
+              {t("aboutus.fqasub")}
               </p>
               <form>
                 <div className="form-group mb-6">
@@ -210,13 +212,13 @@ export const Aboutus: FC = () => {
                   type="submit"
                   className="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                 >
-                  Send
+                  {t("aboutus.button")}
                 </button>
               </form>
             </div>
             <div className="mb-6 md:mb-0">
               <p className="font-bold mb-4">
-                Are there any guarantees for the product?
+              {t("aboutus.fqaqu")}
               </p>
               <p className="text-gray-500 mb-12">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
@@ -225,7 +227,7 @@ export const Aboutus: FC = () => {
                 dolorem, doloremque rem aliquid perferendis.
               </p>
               <p className="font-bold mb-4">
-                How long does it take to build a PC ??
+              {t("aboutus.fqaqu2")}
               </p>
               <p className="text-gray-500 mb-12">
                 Distinctio corporis, iure facere ducimus quos consectetur ipsa
@@ -235,14 +237,14 @@ export const Aboutus: FC = () => {
                 dolores libero repellendus cupiditate mollitia quidem dolorem
                 odit
               </p>
-              <p className="font-bold mb-4">How does PC cleaning work ??</p>
+              <p className="font-bold mb-4">{t("aboutus.fqaqu3")}</p>
               <p className="text-gray-500 mb-12">
                 Minima sunt at nulla tenetur, numquam unde quod modi magnam ab
                 deserunt ipsam sint aliquid dolores libero repellendus
                 cupiditate mollitia quidem dolorem.
               </p>
               <p className="font-bold mb-4">
-                Can I upgrade my PC that wasn't built by your company?
+              {t("aboutus.fqaqu4")}
               </p>
               <p className="text-gray-500 mb-12">
                 Laudantium perferendis, est alias iure ut veniam suscipit

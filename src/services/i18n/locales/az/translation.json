@@ -5,7 +5,8 @@
   "navbar":{
     "home":"Baş səhifə",
     "products": "Məhsullar",
-    "aboutus": "Haqqımızda"
+    "aboutus": "Haqqımızda",
+    "wishlist":"Istək siyahısı"
   },
   "social": "Sosial mediada bizə qoşulun",
   "footer":{
@@ -14,6 +15,50 @@
     "products": "Məhsullar",
     "aboutus": "Haqqımızda",
     "help" : "Kömək"
+  },
+  "products":{
+    "header":"Təqdim etdiyimiz ",
+    "header2": "məhsul və xidmətlərimiz",
+    "top":"Ən çox satılan məhsul",
+    "topicon": "Ən yaxşı keyfiyyət",
+    "topicon2": "Ən yaxşı dizayn",
+    "title": "Məhsullar"
+
+  },
+  "aboutus":{
+    "header":"Niyə",
+    "header2": "HyperPC?",
+    "card": "Biz təmin edirik",
+    "cardicon":"Ən yaxşı komanda",
+    "cardicon2": "Ən yaxşı keyfiyyət",
+    "cardicon3": "Sürətli xidmət",
+    "group": "Komandamız ",
+    "group2" : "sizə kömək etməkdən",
+    "group3":"məmnun olacaq",
+    "button": "Göndər",
+    "fqa": "Tez-tez verilən suallar",
+    "fqasub": "Tez-tez verilən suallar bölməsində cavabınızı tapmadınız? Satış qrupumuzla əlaqə saxlayın.",
+    "fqaqu" : "Bu məhsul üçün hər hansı bir zəmanət varmı?",
+    "fqaqu2": "PC qurmaq üçün nə qədər vaxt lazımdır?",
+    "fqaqu3": "PC təmizlənməsi necə işləyir??",
+    "fqaqu4": "Şirkətiniz tərəfindən yaradılmamış Kompüterimi yeniləyə bilərəmmi?"
+  },
+  "home":{
+    "header":"HYPER PC-YƏ",
+    "header2":"XOŞ GƏLMİSİNİZ",
+    "service":"XİDMƏTLƏRİMİZ",
+    "servicetype": "PC təmizlənməsi",
+    "servicetype2": "Problemlərin aradan qaldırılması",
+    "servicetype3": "Yeni ehtiyat hissələrinin quraşdırılması və satışı",
+    "card":"Niyə məhz bizik?",
+    "cardicon": "24/7 Dəstək",
+    "cardicon2": "Keyfiyyət zəmanəti",
+    "cardicon3": "Çox sürətli çatdırılma",
+    "reviews": "Müştərilərimizin rəyləri",
+    "mapicon": "Texniki dəstək",
+    "mapicon2": "Satış suallar"
+
   }
+
 
 }

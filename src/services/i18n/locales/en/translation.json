@@ -5,7 +5,8 @@
   "navbar":{
     "home":"Home",
     "products": "Products",
-    "aboutus": "About Us"
+    "aboutus": "About US",
+    "wishlist":"Wishlist"
   },
    "social": "Get connected with us on social networks",
   "footer":{
@@ -14,6 +15,49 @@
     "products": "Products",
     "aboutus": "About Us",
     "help": "Help"
+  },
+  "products":{
+    "header":"Our Products and services  ",
+    "header2": "that we provide",
+    "top": "The best-selling product",
+    "topicon": "Best quality ",
+    "topicon2":"Best design",
+    "title" : "Product"
+    
+  },
+  "aboutus":{
+    "header":"Why",
+    "header2": "HyperPC?",
+    "card": "We provide",
+    "cardicon":"Best team",
+    "cardicon2": "Best quality",
+    "cardicon3": "Fast service",
+    "group": "Our Team ",
+    "group2":"will be",
+    "group3":"happy to help you",
+    "fqa": "Frequently asked questions",
+    "button":"Send",
+    "fqasub": "Didn't find your answer in the FAQ? Contact our sales team.",
+    "fqaqu" : "Are there any guarantees for the product?",
+    "fqaqu2": "How long does it take to build a PC ?",
+    "fqaqu3": "How does PC cleaning work ?",
+    "fqaqu4": "Can I upgrade my PC that wasn't built by your company?"
+  },
+  "home":{
+    "header":"WELCOME TO",
+    "header2":"HYPERPC",
+    "service":"OUR SERVICES",
+    "servicetype": "PC Clening",
+    "servicetype2": "Troubleshooting issues",
+    "servicetype3": "Installation and sale of new spare parts",
+    "card":"Why us?",
+    "cardicon": "Support 24/7",
+    "cardicon2": "Quality assurance",
+    "cardicon3": "Extremely fast Delivery",
+    "reviews": "Our customers reviews",
+    "mapicon": "Technical support",
+    "mapicon2": "Sales questions"
+
   }
 
 }

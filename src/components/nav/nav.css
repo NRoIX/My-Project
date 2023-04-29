@@ -13,3 +13,12 @@ body[class*="dark-mode"] .languagebtn {
 body[class*="dark-mode"] .username{
   color: red;
 }
+.totalitemnumber{
+  right: 0.1rem;
+  top: 0.7rem;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 90%;
+  padding: 0.4rem;
+}
